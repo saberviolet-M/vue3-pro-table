@@ -1,5 +1,5 @@
 import type { Component, VNode } from 'vue'
-import type { TableProps, PaginationProps, FormProps, FormItemProps } from 'ant-design-vue'
+import type { PaginationProps, FormProps, FormItemProps } from 'ant-design-vue'
 
 // 表格列配置
 export interface TableColumn {

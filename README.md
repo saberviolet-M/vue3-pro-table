@@ -1,6 +1,6 @@
-# vue3-pro-table
+# vue3-pro-table-antd
 
-[![npm version](https://img.shields.io/npm/v/vue3-pro-table.svg)](https://www.npmjs.com/package/vue3-pro-table)
+[![npm version](https://img.shields.io/npm/v/vue3-pro-table-antd.svg)](https://www.npmjs.com/package/vue3-pro-table-antd)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vue 3](https://img.shields.io/badge/Vue-3-42b883.svg)](https://vuejs.org/)
 
@@ -22,11 +22,11 @@ English | [简体中文](README.zh-CN.md)
 ## Installation
 
 ```bash
-npm install vue3-pro-table
+npm install vue3-pro-table-antd
 # or
-yarn add vue3-pro-table
+yarn add vue3-pro-table-antd
 # or
-pnpm add vue3-pro-table
+pnpm add vue3-pro-table-antd
 ```
 
 ## Peer Dependencies
@@ -46,7 +46,7 @@ This component requires:
 </template>
 
 <script setup lang="ts">
-import { ProTable } from 'vue3-pro-table'
+import { ProTable } from 'vue3-pro-table-antd'
 
 const columns = [
   {

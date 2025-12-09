@@ -23,9 +23,8 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, computed, h, toRaw, ref, nextTick, withDefaults, onMounted } from 'vue';
+import { reactive, computed, h, toRaw, ref, nextTick, onMounted } from 'vue';
 import { message } from 'ant-design-vue';
-import type { VNode } from 'vue';
 
 import CustomSearch from './search.vue';
 import CustomTable from './table.vue';
@@ -36,8 +35,7 @@ import type {
   BaseColumn,
   ProTableProps,
   PageChangeEvent,
-  ProTableExposed,
-  RequestResult
+  ProTableExposed
 } from './types';
 
 const commonCustomCellStyle = { whiteSpace: 'nowrap', minWidth: '100px' };
@@ -180,7 +178,7 @@ const reload = async (): Promise<void> => {
     await customSearchRef?.value?.formRef?.validate?.();
 
     // 执行请求
-    const res = await props.request(toRaw(params.value));
+    const res = await props.request!(toRaw(params.value));
 
     if (!res) {
       throw new ProTableError('请求返回为空', 'REQUEST_EMPTY');

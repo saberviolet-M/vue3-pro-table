@@ -7,15 +7,15 @@
       v-bind="Object.assign({ labelCol: { span: 6 } }, formOptions)"
     >
       <a-row :gutter="24">
-        <template v-for="item in formItems" :key="item.name">
+        <template v-for="item in formItems" :key="item.name || item.dataIndex">
           <a-col
             v-bind="Object.assign({}, GRID_CONFIG, colOptions, item?.colOptions ?? {})"
-            :style="item.hideInForm ? { display: 'none' } : {}"
+            :style="item.hideInSearch ? { display: 'none' } : {}"
           >
-            <a-form-item :label="item.label" :name="item.name" v-bind="item.formItemProps || {}">
+            <a-form-item :label="item.label" :name="item.name || item.dataIndex" v-bind="item.formItemProps || {}">
               <component
                 :is="item.component || Input"
-                v-model:value="formState[item.name]"
+                v-model:value="formState[item.name || item.dataIndex || '']"
                 v-bind="item.fieldProps || { placeholder: '请输入', allowClear: true }"
               />
             </a-form-item>
@@ -39,10 +39,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, withDefaults } from 'vue';
-import type { FormInstance, FormProps, FormItemProps } from 'ant-design-vue';
+import { ref, watch } from 'vue';
+import type { FormInstance, FormProps } from 'ant-design-vue';
 import { Input, message } from 'ant-design-vue';
-import { unFlattenForm, filterEmptyValues, safeExecute, ProTableError } from './utils';
+import { unFlattenForm, filterEmptyValues, safeExecute } from './utils';
 import type { BaseColumn } from './types';
 
 interface SearchComponentProps {
@@ -85,7 +85,7 @@ const initFormState = (): void => {
     // 只有当 defaultValue 属性存在时才设置值
     // 使用 hasOwnProperty 检查，避免将 undefined 显式设置为 undefined
     if (Object.prototype.hasOwnProperty.call(item, 'defaultValue')) {
-      state[item.name || ''] = item.defaultValue;
+      state[item.name || item.dataIndex || ''] = item.defaultValue;
       defaultFn = true;
     }
   });
@@ -154,5 +154,7 @@ interface SearchExposed {
   formRef: FormInstance | null
 }
 
-defineExpose<SearchExposed>({ formRef });
+defineExpose<SearchExposed>({
+  get formRef() { return formRef.value; }
+});
 </script>

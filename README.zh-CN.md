@@ -1,6 +1,6 @@
-# vue3-pro-table
+# vue3-pro-table-antd
 
-[![npm 版本](https://img.shields.io/npm/v/vue3-pro-table.svg)](https://www.npmjs.com/package/vue3-pro-table)
+[![npm 版本](https://img.shields.io/npm/v/vue3-pro-table-antd.svg)](https://www.npmjs.com/package/vue3-pro-table-antd)
 [![许可证: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vue 3](https://img.shields.io/badge/Vue-3-42b883.svg)](https://vuejs.org/)
 
@@ -22,11 +22,11 @@
 ## 安装
 
 ```bash
-npm install vue3-pro-table
+npm install vue3-pro-table-antd
 # 或
-yarn add vue3-pro-table
+yarn add vue3-pro-table-antd
 # 或
-pnpm add vue3-pro-table
+pnpm add vue3-pro-table-antd
 ```
 
 ## 依赖要求

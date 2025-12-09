@@ -1,8 +1,5 @@
 // ProTable 组件导出文件
 import ProTable from './index.vue';
-import ProTableSearch from './search.vue';
-import ProTableTable from './table.vue';
-import ProTableDefinition from './definition.vue';
 
 // 导出组件
 export { default as ProTable } from './index.vue';

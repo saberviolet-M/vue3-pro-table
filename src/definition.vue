@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, withDefaults } from 'vue'
+import { computed } from 'vue'
 import { toRefs } from 'vue'
 
 interface DefinitionProps {
@@ -15,7 +15,7 @@ interface DefinitionProps {
 const props = withDefaults(defineProps<DefinitionProps>(), {
   record: () => ({}),
   valueKey: undefined,
-  middleware: (v) => v,
+  middleware: (v: any) => v,
 })
 
 const { record, valueKey, middleware } = toRefs(props)
