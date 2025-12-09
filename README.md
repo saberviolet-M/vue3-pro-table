@@ -6,6 +6,8 @@
 
 A professional table component for Vue 3 with built-in search, pagination, and advanced features. Built on top of Ant Design Vue.
 
+English | [简体中文](README.zh-CN.md)
+
 ## Features
 
 - 🚀 **Out of the box** - Ready to use with minimal configuration
