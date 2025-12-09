@@ -1,6 +1,6 @@
-# @your-org/pro-table
+# vue3-pro-table
 
-[![npm version](https://img.shields.io/npm/v/@your-org/pro-table.svg)](https://www.npmjs.com/package/@your-org/pro-table)
+[![npm version](https://img.shields.io/npm/v/vue3-pro-table.svg)](https://www.npmjs.com/package/vue3-pro-table)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vue 3](https://img.shields.io/badge/Vue-3-42b883.svg)](https://vuejs.org/)
 
@@ -20,11 +20,11 @@ A professional table component for Vue 3 with built-in search, pagination, and a
 ## Installation
 
 ```bash
-npm install @your-org/pro-table
+npm install vue3-pro-table
 # or
-yarn add @your-org/pro-table
+yarn add vue3-pro-table
 # or
-pnpm add @your-org/pro-table
+pnpm add vue3-pro-table
 ```
 
 ## Peer Dependencies
@@ -44,7 +44,7 @@ This component requires:
 </template>
 
 <script setup lang="ts">
-import { ProTable } from '@your-org/pro-table'
+import { ProTable } from 'vue3-pro-table'
 
 const columns = [
   {
@@ -80,7 +80,7 @@ const fetchData = async (params) => {
 ### Using Column Builder
 
 ```typescript
-import { ColumnBuilder } from '@your-org/pro-table'
+import { ColumnBuilder } from 'vue3-pro-table'
 
 const columns = [
   ColumnBuilder.create()
@@ -233,4 +233,4 @@ Please read our [Contributing Guide](CONTRIBUTING.md) before submitting a Pull R
 
 ## License
 
-MIT © [Your Organization](https://github.com/your-org)
+MIT © [saberviolet-M](https://github.com/saberviolet-M)

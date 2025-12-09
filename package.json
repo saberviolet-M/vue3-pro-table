@@ -1,5 +1,5 @@
 {
-  "name": "@your-org/pro-table",
+  "name": "vue3-pro-table",
   "version": "1.0.0-alpha.1",
   "description": "A professional table component for Vue 3 with built-in search, pagination, and advanced features",
   "keywords": [
@@ -12,16 +12,16 @@
     "search-table",
     "pagination"
   ],
-  "author": "Your Organization",
+  "author": "saberviolet-M",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/pro-table.git"
+    "url": "https://github.com/saberviolet-M/vue3-pro-table.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/pro-table/issues"
+    "url": "https://github.com/saberviolet-M/vue3-pro-table/issues"
   },
-  "homepage": "https://github.com/your-org/pro-table#readme",
+  "homepage": "https://github.com/saberviolet-M/vue3-pro-table#readme",
   "main": "dist/pro-table.umd.js",
   "module": "dist/pro-table.es.js",
   "types": "dist/types/index.d.ts",
