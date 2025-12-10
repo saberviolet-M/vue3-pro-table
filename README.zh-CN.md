@@ -3,6 +3,7 @@
 [![npm 版本](https://img.shields.io/npm/v/vue3-pro-table-antd.svg)](https://www.npmjs.com/package/vue3-pro-table-antd)
 [![许可证: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vue 3](https://img.shields.io/badge/Vue-3-42b883.svg)](https://vuejs.org/)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/saberviolet-M/vue3-pro-table/ci.yml)](https://github.com/saberviolet-M/vue3-pro-table/actions)
 
 基于 Ant Design Vue 构建的专业 Vue 3 表格组件，内置搜索、分页和高级功能。
 
@@ -232,6 +233,19 @@ const fetchData = async (params) => {
 ## 贡献指南
 
 请在提交 Pull Request 前阅读我们的[贡献指南](CONTRIBUTING.md)。
+
+## 更新日志
+
+每个版本的详细更改记录在 [CHANGELOG.md](CHANGELOG.md) 中。
+
+### 最近更新 (v1.0.0-alpha.2)
+
+- ✅ **完整的 TypeScript 支持**: 所有组件的完整类型定义
+- ✅ **增强的测试覆盖**: 全面的边缘情况测试
+- ✅ **CDN 支持**: 可通过 unpkg 和 jsDelivr 使用
+- ✅ **CI/CD 流水线**: 自动化测试和发布
+- ✅ **改进的文档**: 详细的示例和使用指南
+- ✅ **错误修复**: 类型生成、表单验证和属性命名
 
 ## 许可证
 

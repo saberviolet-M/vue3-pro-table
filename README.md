@@ -3,6 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/vue3-pro-table-antd.svg)](https://www.npmjs.com/package/vue3-pro-table-antd)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vue 3](https://img.shields.io/badge/Vue-3-42b883.svg)](https://vuejs.org/)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/saberviolet-M/vue3-pro-table/ci.yml)](https://github.com/saberviolet-M/vue3-pro-table/actions)
 
 A professional table component for Vue 3 with built-in search, pagination, and advanced features. Built on top of Ant Design Vue.
 
@@ -232,6 +233,19 @@ You can customize the theme using CSS variables:
 ## Contributing
 
 Please read our [Contributing Guide](CONTRIBUTING.md) before submitting a Pull Request.
+
+## Changelog
+
+Detailed changes for each version are documented in the [CHANGELOG.md](CHANGELOG.md).
+
+### Recent Updates (v1.0.0-alpha.2)
+
+- ✅ **Complete TypeScript Support**: Full type definitions for all components
+- ✅ **Enhanced Testing**: Comprehensive test coverage for edge cases
+- ✅ **CDN Support**: Available via unpkg and jsDelivr
+- ✅ **CI/CD Pipeline**: Automated testing and publishing
+- ✅ **Improved Documentation**: Detailed examples and usage guides
+- ✅ **Bug Fixes**: Type generation, form validation, and property naming
 
 ## License
 
