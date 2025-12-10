@@ -40,5 +40,16 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
       exclude: ['node_modules/', 'dist/', 'tests/', 'examples/', '**/*.d.ts', '**/types.ts'],
     },
+    // 忽略测试中预期的错误，这些是测试故意抛出的
+    onConsoleLog: (log, type) => {
+      // 忽略 ProTable.reload 相关的错误
+      if (type === 'error' && (
+        log.includes('ProTable.reload') ||
+        log.includes('ProTableError') ||
+        log.includes('请求返回为空')
+      )) {
+        return false // 不记录为未处理的错误
+      }
+    },
   },
 })

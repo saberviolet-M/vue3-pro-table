@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15  # 增加超时时间，避免被意外取消
 
     strategy:
       matrix:
@@ -37,6 +38,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10  # 构建通常很快，但设置超时以防万一
     needs: test
 
     steps:

@@ -159,7 +159,10 @@ export const handleError = (error: unknown, context = 'ProTable'): ProTableError
     errorDetails = error as Record<string, any>
   }
 
-  console.error(`[${context}]`, errorMessage, errorDetails)
+  // 只在非测试环境下输出错误
+  if (process.env.NODE_ENV !== 'test') {
+    console.error(`[${context}]`, errorMessage, errorDetails)
+  }
 
   return new ProTableError(`${context}: ${errorMessage}`, errorCode, errorDetails)
 }
