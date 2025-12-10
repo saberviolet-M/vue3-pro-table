@@ -247,6 +247,28 @@ Detailed changes for each version are documented in the [CHANGELOG.md](CHANGELOG
 - ✅ **Improved Documentation**: Detailed examples and usage guides
 - ✅ **Bug Fixes**: Type generation, form validation, and property naming
 
+## Documentation
+
+### 📚 Core Documentation
+- **[API Reference](docs/API.md)** - Complete API documentation with examples
+- **[Development Workflow](DEVELOPMENT_WORKFLOW.md)** - Standardized development process and templates
+- **[Changelog](CHANGELOG.md)** - Version history and release notes
+
+### 🌐 Language Support
+- **[中文文档](README.zh-CN.md)** - Chinese documentation
+
+### 🎯 Examples
+- **[Basic Usage](examples/basic-usage.vue)** - Simple implementation example
+- **[Advanced Usage](examples/advanced-usage.vue)** - Custom slots, rendering, and advanced features
+- **[CDN Usage](examples/cdn-usage.html)** - Browser usage without build tools
+
+### 🔧 Development Resources
+- Check the [Development Workflow](DEVELOPMENT_WORKFLOW.md) for:
+  - Standardized todo templates
+  - Version management guidelines
+  - Release creation process
+  - Common commands and troubleshooting
+
 ## License
 
 MIT © [saberviolet-M](https://github.com/saberviolet-M)

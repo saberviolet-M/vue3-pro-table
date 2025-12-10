@@ -247,6 +247,28 @@ const fetchData = async (params) => {
 - ✅ **改进的文档**: 详细的示例和使用指南
 - ✅ **错误修复**: 类型生成、表单验证和属性命名
 
+## 文档
+
+### 📚 核心文档
+- **[API 参考](docs/API.md)** - 完整的 API 文档和示例
+- **[开发工作流](DEVELOPMENT_WORKFLOW.md)** - 标准化的开发流程和模板
+- **[更新日志](CHANGELOG.md)** - 版本历史和发布说明
+
+### 🌐 语言支持
+- **[English Documentation](README.md)** - 英文文档
+
+### 🎯 示例
+- **[基础用法](examples/basic-usage.vue)** - 简单实现示例
+- **[高级用法](examples/advanced-usage.vue)** - 自定义插槽、渲染和高级功能
+- **[CDN 用法](examples/cdn-usage.html)** - 无需构建工具的浏览器用法
+
+### 🔧 开发资源
+- 查看 [开发工作流](DEVELOPMENT_WORKFLOW.md) 获取：
+  - 标准化的待办事项模板
+  - 版本管理指南
+  - 发布创建流程
+  - 常用命令和问题排查
+
 ## 许可证
 
 MIT © [saberviolet-M](https://github.com/saberviolet-M)
