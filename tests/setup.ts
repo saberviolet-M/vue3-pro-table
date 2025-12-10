@@ -21,20 +21,35 @@ if (typeof window !== 'undefined') {
   // 解决 window.computedStyle 问题
   Object.defineProperty(window, 'getComputedStyle', {
     writable: true,
-    value: () => ({
-      getPropertyValue: (prop: string) => {
-        // 模拟常见的样式属性
-        if (prop === 'width') return '100px'
-        if (prop === 'height') return '100px'
-        if (prop === 'padding') return '0px'
-        if (prop === 'margin') return '0px'
-        if (prop === 'border') return '0px'
-        if (prop === 'overflow') return 'visible'
-        if (prop === 'overflow-x') return 'visible'
-        if (prop === 'overflow-y') return 'visible'
-        return ''
-      },
-    }),
+    value: (element: Element, pseudoElement?: string) => {
+      // 处理 ant-design-vue getScrollBarSize 的调用
+      if (pseudoElement === '::-webkit-scrollbar') {
+        return {
+          width: '17px',
+          height: '17px',
+          getPropertyValue: (prop: string) => {
+            if (prop === 'width') return '17px'
+            if (prop === 'height') return '17px'
+            return ''
+          },
+        }
+      }
+
+      return {
+        getPropertyValue: (prop: string) => {
+          // 模拟常见的样式属性
+          if (prop === 'width') return '100px'
+          if (prop === 'height') return '100px'
+          if (prop === 'padding') return '0px'
+          if (prop === 'margin') return '0px'
+          if (prop === 'border') return '0px'
+          if (prop === 'overflow') return 'visible'
+          if (prop === 'overflow-x') return 'visible'
+          if (prop === 'overflow-y') return 'visible'
+          return ''
+        },
+      }
+    },
   })
 
   // 解决 document.body.style 问题
