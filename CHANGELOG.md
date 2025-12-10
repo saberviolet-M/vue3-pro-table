@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-alpha.3] - 2025-12-10
+
+### Fixed
+- **ESLint Code Quality**: Fixed all ESLint warnings and formatting issues
+- **TypeScript Type Safety**: Reduced `any` type usage with proper type definitions
+- **Test Maintenance**: Fixed unused variable warnings and test case assertions
+- **Build Process**: Ensured clean builds without ESLint errors in source files
+
+### Changed
+- **Code Formatting**: Applied consistent code style with Prettier auto-fix
+- **Test Improvements**: Updated test cases to match actual implementation behavior
+- **Development Workflow**: Enhanced code quality checks in development process
+
+### Technical Details
+- **ESLint Configuration**: Fixed source file linting while excluding build artifacts
+- **Type Definitions**: Improved type safety in test utilities and component props
+- **Test Environment**: Identified `window.matchMedia` mocking requirement for tests
+- **Git Workflow**: Standardized commit messages and version management
+
 ## [1.0.0-alpha.2] - 2025-12-09
 
 ### Added
@@ -55,5 +74,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Documentation**: README with basic usage examples
 - **Build System**: Vite-based build with UMD and ES module outputs
 
-[1.0.0-alpha.2]: https://github.com/saberviolet-M/vue3-pro-table/compare/v1.0.0-alpha.1...v1.0.0-alpha.2
-[1.0.0-alpha.1]: https://github.com/saberviolet-M/vue3-pro-table/releases/tag/v1.0.0-alpha.1
+[1.0.0-alpha.3]: https://github.com/saberviolet-M/vue3-pro-table-antd/compare/v1.0.0-alpha.2...v1.0.0-alpha.3
+[1.0.0-alpha.2]: https://github.com/saberviolet-M/vue3-pro-table-antd/compare/v1.0.0-alpha.1...v1.0.0-alpha.2
+[1.0.0-alpha.1]: https://github.com/saberviolet-M/vue3-pro-table-antd/releases/tag/v1.0.0-alpha.1
