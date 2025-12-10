@@ -238,7 +238,19 @@ Please read our [Contributing Guide](CONTRIBUTING.md) before submitting a Pull R
 
 Detailed changes for each version are documented in the [CHANGELOG.md](CHANGELOG.md).
 
-### Recent Updates (v1.0.0-alpha.2)
+### Recent Updates (v1.0.0-alpha.4)
+
+- ✅ **CI/CD Improvements**: Fixed all CI test failures and environment issues
+- ✅ **Testing Infrastructure**: Enhanced test reliability and stability
+- ✅ **Ant Design Vue Compatibility**: Fixed compatibility issues in test environments
+
+### Previous Updates (v1.0.0-alpha.3)
+
+- ✅ **ESLint Code Quality**: Fixed all ESLint warnings and formatting issues
+- ✅ **TypeScript Type Safety**: Reduced `any` type usage with proper type definitions
+- ✅ **Test Maintenance**: Fixed unused variable warnings and test case assertions
+
+### Previous Updates (v1.0.0-alpha.2)
 
 - ✅ **Complete TypeScript Support**: Full type definitions for all components
 - ✅ **Enhanced Testing**: Comprehensive test coverage for edge cases
